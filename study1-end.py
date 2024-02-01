@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as BS
 import time
 
-target_link = 'https://news.daum.net/breakingnews/economic'
+target_link = 'https://news.daum.net/breakingnews/economic?page=2'
 
 def appendTitleToList(news_title_list: list, news: str, news_title_link) -> None:
     news_title_string = news.get_text()
